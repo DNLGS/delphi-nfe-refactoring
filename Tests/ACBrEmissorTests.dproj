@@ -1,0 +1,18 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{1DB20D90-E138-4B08-AFAF-65BCBDE79F1A}</ProjectGuid>
+    <MainSource>ACBrEmissorTests.dpr</MainSource>
+    <ProjectVersion>15.4</ProjectVersion>
+    <FrameworkType>None</FrameworkType>
+    <AppType>Console</AppType>
+    <Config Condition="'$(Config)'==''">Debug</Config>
+    <Platform>Win32</Platform>
+    <DCC_Namespace>System;System.Win;Winapi;Vcl;Vcl.Imaging;Data;Data.Win;Xml;Xml.Win;Soap;Web</DCC_Namespace>
+    <DCC_UnitSearchPath>..\Domain\Entitys;..\Infrastructure\Interfaces;..\Infrastructure\Services;..\Application;C:\ACBr\Lib\Delphi\LibD21\Win32\Release;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+    <DCC_ExeOutput>build</DCC_ExeOutput>
+    <DCC_DcuOutput>build</DCC_DcuOutput>
+    <DCC_AssertionsAtRuntime>true</DCC_AssertionsAtRuntime>
+  </PropertyGroup>
+  <ItemGroup><DelphiCompile Include="$(MainSource)"><MainSource>MainSource</MainSource></DelphiCompile></ItemGroup>
+  <Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" />
+</Project>

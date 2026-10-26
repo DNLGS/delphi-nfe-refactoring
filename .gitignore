@@ -1,0 +1,46 @@
+# Saídas de compilação Delphi e verificações locais
+build/
+Win32/
+Win64/
+Debug/
+Release/
+*.dcu
+*.exe
+*.dll
+*.bpl
+*.dcp
+*.obj
+*.o
+*.hpp
+*.map
+*.tds
+*.rsm
+*.drc
+
+# Estado local e cópias de segurança da IDE
+__history/
+__recovery/
+*.~*
+*.bak
+*.dproj.local
+*.groupproj.local
+*.identcache
+*.dsk
+*.stat
+*.tvsconfig
+
+# Certificados e configuração local com segredos
+*.pfx
+*.p12
+*.key
+.env
+.env.*
+!.env.example
+
+# Arquivos temporários do Windows
+Thumbs.db
+Desktop.ini
+*.tmp
+
+# Arquivos de suporte de IA
+graphify-out/
