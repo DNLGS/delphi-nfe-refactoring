@@ -23,7 +23,6 @@ O código reúne operações de NF-e e NFC-e em Delphi. A proposta é evoluir a 
 | `Infrastructure/Interfaces` | Contrato `IEmissorNotaFiscal`, utilizado pelos casos de uso fiscais. |
 | `Infrastructure/Services` | Adaptador `TACBrEmissor`, responsável pelo mapeamento para o ACBr, comunicação fiscal e gravação de XML. |
 | `Tests` | Projeto console de verificações locais com transporte e assinatura simulados. |
-| `graphify-out` | Grafo de conhecimento para navegação e análise do projeto. |
 
 Os casos de uso recebem as dependências pelo construtor. Por exemplo, `TEmitirNotaFiscal` utiliza `IEmissorNotaFiscal`, implementada por `TACBrEmissor`; `TSalvarDadosEmissao` utiliza `INotaFiscalRepository`.
 
